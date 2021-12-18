@@ -2,6 +2,7 @@
 baremodule LAMMPS_jll
 using Base
 using Base: UUID
+include(path) = Base.include(@__MODULE__, path)
 include(joinpath("..", ".pkg", "platform_augmentation.jl"))
 import JLLWrappers
 
