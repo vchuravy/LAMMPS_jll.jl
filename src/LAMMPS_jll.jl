@@ -2,6 +2,7 @@
 baremodule LAMMPS_jll
 using Base
 using Base: UUID
+include(joinpath("..", ".pkg", "platform_augmentation.jl"))
 import JLLWrappers
 
 JLLWrappers.@generate_main_file_header("LAMMPS")
